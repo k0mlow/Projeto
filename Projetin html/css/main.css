@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
 }
 
+ul {
+    padding: 0px !important;
+}
+
 .menu-principal {
     width: 100%;
     background-color: #202124;
@@ -24,6 +28,7 @@ main {
 }
 
 .redes-sociais ul li {
+
     margin-left: 10px;
     display: inline-block;
     list-style: none;
@@ -35,10 +40,11 @@ main {
 }
 
 .header-2 {
-    height: 60px;
+    height: 54px;
     background-color: #ffffff;
-    width: 100%;
-    border-bottom: 5px solid gray;
+    width: 980px;
+    padding: 15px;
+    margin: 0 auto;
 }
 
 .options {
@@ -61,11 +67,42 @@ main {
 }
 
 .login {
-    margin-top: 15px;
+    margin-top: 16px;
     display: inline-block;
-    width: 20%;
+    width: 29%;
+    text-align: center;
+
+}
+
+:root {
+    --cor-botao: #202124;
+    --cor-letra: white;
+    --cor-hover: #737475;
 }
 
 .login button {
     margin-left: 20px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    text-transform: uppercase;
+    background-color: var(--cor-botao);
+    color: var(--cor-letra);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.login button:hover {
+    background-color: var(--cor-hover);
+}
+
+.login button:active {
+    background-color: var(--cor-letra);
+}
+
+.coluna {
+    width: 100%;
+    float: left;
+    position: relative;
+    border-bottom: 5px solid gray;
+    height: 84px;
 }
